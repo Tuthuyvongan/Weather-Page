@@ -53,6 +53,9 @@
 .weather-description {
   font-size: 14px;
 }
+.weather-description::first-letter {
+  text-transform: capitalize;
+}
 .weather-icon {
   width: 70px;
   height: 70px;

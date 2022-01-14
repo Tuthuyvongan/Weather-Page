@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Page</title>
     <script src="/js/all.min.js"></script>
+    <script src="/js/moment.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,33 +21,33 @@
             <div class="info-wrapper">
                 <p class="city-name">London</p>
                 <p class="weather-description">clear sky</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
                 <p class="temperature">26</p>
             </div>          
-        </div>
-            
+        </div>           
         <div class="additional-section">
             <div class="row">
                 <div class="item">
-                    <div class="label">Mặt trời mọc</div>
-                    <div class="value">6:16</div>
+                    <div class="label sun-rise">Mặt trời mọc</div>
+                    <div class="value time-rise">6:16</div>
                 </div>
                 <div class="item">
-                    <div class="label">Mặt trời lặn</div>
-                    <div class="value">6:16</div>
+                    <div class="label sun-set">Mặt trời lặn</div>
+                    <div class="value time-set">6:16</div>
                 </div>
             </div>          
             <div class="row">
                 <div class="item">
-                    <div class="label">Độ ẩm</div>
-                    <div class="value">73%</div>
+                    <div class="label humidity">Độ ẩm</div>
+                    <div class="value humidity-value">73%</div>
                 </div>
                 <div class="item">
-                    <div class="label">Gió</div>
-                    <div class="value">5 km/h</div>
+                    <div class="label wind">Gió</div>
+                    <div class="value wind-speed">5 m/s</div>
                 </div>
             </div>        
         </div>
     </div>
+    <script src="/js/index.js"></script>r
 </body>
 </html>
