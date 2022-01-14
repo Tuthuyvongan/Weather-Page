@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page</title>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/moment.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search for a city..." >
+            </div>
+            <div class="info-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-description">--</p>
+                <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                <p class="temperature">--</p>
+            </div>          
+        </div>           
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label sun-rise">Mặt trời mọc</div>
+                    <div class="value time-rise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label sun-set">Mặt trời lặn</div>
+                    <div class="value time-set">--</div>
+                </div>
+            </div>          
+            <div class="row">
+                <div class="item">
+                    <div class="label humidity">Độ ẩm</div>
+                    <div class="value humidity-value">--</div>
+                </div>
+                <div class="item">
+                    <div class="label wind">Gió</div>
+                    <div class="value wind-speed">--</div>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <script src="/js/index.js"></script>r
+</body>
+</html>
