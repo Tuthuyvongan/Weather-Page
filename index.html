@@ -5,20 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Page</title>
     <script src="/js/all.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="main-section">
             <div class="search-bar">
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search for a city..." >
             </div>
-            <div class="city"></div>
-            <div class="weather"></div>
-            <div class="icon-weather"></div>
-            <div class="degree"></div>
+            <div class="info-wrapper">
+                <p class="city-name">London</p>
+                <p class="weather-description">clear sky</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                <p class="temperature">26</p>
+            </div>          
         </div>
-        
-        <div class="additional-section"></div>
+            
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặt trời mọc</div>
+                    <div class="value">6:16</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặn</div>
+                    <div class="value">6:16</div>
+                </div>
+            </div>          
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="value">73%</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="value">5 km/h</div>
+                </div>
+            </div>        
+        </div>
     </div>
 </body>
 </html>
