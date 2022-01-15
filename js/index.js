@@ -20,7 +20,8 @@ searchInput.addEventListener('change', (e) => {
         console.log('[searchInput]', data);
         cityName.innerHTML = data.name || DEFAULT_VALUE;
         weatherDescription.innerHTML = data.weather[0].description || DEFAULT_VALUE;
-        weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        weatherIcon.setAttribute('src', weatherIcon.src);
         temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;
         timeRise.innerHTML = moment.unix(data.sys.sunrise).format('H:mm') || DEFAULT_VALUE;
         timeSet.innerHTML = moment.unix(data.sys.sunset).format('H:mm') || DEFAULT_VALUE;
